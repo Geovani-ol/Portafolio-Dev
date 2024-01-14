@@ -1,9 +1,35 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from "../components/SectionContainer.astro";
 ---
 
-<Layout title="Portadolio">
-	<main>
-		
-	</main>
+<Layout title="Portafolio de Geovani - Desarrollador y Programador Web">
+  <main class="px-4">
+    <SectionContainer id="inicio" class="py-32">
+      <img
+        class="rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 size-[100px] mb-5"
+        src="/Davidformal.webp"
+        alt="davidgeovani photol"
+      />
+      <h1
+        class="text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
+        Hey, Soy David Geovani
+      </h1>
+      <h2
+        class="text-xl lg:text-2xl text-balance max-w-[700px] pb-4 text-yellow-200"
+      >
+        Desarrollador Web. <span class="text-red-200"
+          >De Michoacán, México.</span
+        >
+        <span class="text-sky-200"
+          >Me apasiona crear sitios web que sean atractivos y fáciles de usar</span
+        >
+      </h2>
+      <h3 class="text-xl">
+        “La programación es una forma de arte, pero no es pintar cuadros. Es
+        crear un universo.” - Derek Parfit
+      </h3>
+    </SectionContainer>
+  </main>
 </Layout>
