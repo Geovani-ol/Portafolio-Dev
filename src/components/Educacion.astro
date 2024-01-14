@@ -1,0 +1,27 @@
+---
+import EducacionItem from "./EducacionItem.astro";
+const EDUCACION = [
+  {
+    date: "Actualmente...",
+    title: "TECNM Campus Morelia",
+    description:
+      "En estos momentos, estoy cursando la carrera de ingenieria en sistemas computacionales.",
+  },
+  {
+    date: "2020 - 2023",
+    title: "Centro de Estudios Tecnologicos industrial y de servicio 120",
+    description:
+      "Durrante mi periodo en el CETis 120, adquirí comocimientos sobre la programación web tanto sobre Frondend como Backend",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+  {
+    EDUCACION.map((educacion) => (
+      <li class="mb-10 ms-6">
+        <EducacionItem {...educacion} />
+      </li>
+    ))
+  }
+</ol>
